@@ -39,7 +39,7 @@ const PageRegister = () => {
             userID: isMainUserID,
             getMilisec: ms,
             product: setProduct,
-            lineUserId: userId,
+            lineUserID: userId,
             plantName: selectPlant,
         }
         const status = await axios.post("https://ms3saqkaz7tkayhx2tstxkx2fu0sabhc.lambda-url.ap-southeast-1.on.aws/api/register",payload);
