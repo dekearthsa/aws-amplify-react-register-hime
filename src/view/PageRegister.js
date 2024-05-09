@@ -42,7 +42,7 @@ const PageRegister = () => {
             lineUserId: userId,
             plantName: selectPlant,
         }
-        const status = await axios.post("https://oeltzxvjafoceq3s2fwqogszoi0umbci.lambda-url.ap-southeast-1.on.aws/api/register",payload);
+        const status = await axios.post("https://ms3saqkaz7tkayhx2tstxkx2fu0sabhc.lambda-url.ap-southeast-1.on.aws/api/register",payload);
         if(status.data.isSave){
             alert(status.data.desc)
         }else{
