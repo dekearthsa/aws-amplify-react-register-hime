@@ -14,7 +14,7 @@ const PageReportSolar = () => {
             report: isReport,
             typeReport: "other"
         }
-        const status = await axios.post("https://backend-smartfm-line-zt27agut7a-as.a.run.app/api/report/other", payload)
+        const status = await axios.post("https://oeltzxvjafoceq3s2fwqogszoi0umbci.lambda-url.ap-southeast-1.on.aws/api/report/other", payload)
         if(status.data.isErr === false){
             alert("Send report sucess.")
             setIsReport("")
